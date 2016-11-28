@@ -96,6 +96,9 @@
     <Compile Include="ServiceResolutionException.cs" />
     <Compile Include="SimpleCqrsRuntime.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleCqrs.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>del *.nupkg</PreBuildEvent>

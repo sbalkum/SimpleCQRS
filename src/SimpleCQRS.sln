@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BE8A5F95-23AD-4B5D-BA21-004909E80F00}"
 EndProject
@@ -41,6 +41,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCqrs.EventStore.SqlServer", "EventStores\SimpleCqrs.EventStore.SqlServer\SimpleCqrs.EventStore.SqlServer.csproj", "{BEEBFC8E-91EC-4E24-8223-395C2302C1B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCqrs.StructureMap", "ServiceLocators\SimpleCqrs.StructureMap\SimpleCqrs.StructureMap.csproj", "{9C1063E4-1A0B-4402-8D78-A3F8E23D3D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCqrs.Sample", "SimpleCqrs.Sample\SimpleCqrs.Sample.csproj", "{BB650328-89A4-4733-926A-0CAF5741FCE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{9C1063E4-1A0B-4402-8D78-A3F8E23D3D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1063E4-1A0B-4402-8D78-A3F8E23D3D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1063E4-1A0B-4402-8D78-A3F8E23D3D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB650328-89A4-4733-926A-0CAF5741FCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB650328-89A4-4733-926A-0CAF5741FCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB650328-89A4-4733-926A-0CAF5741FCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB650328-89A4-4733-926A-0CAF5741FCE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{EE1B7085-F7BC-48BD-B058-C33DF4CD0F74} = {51C20E77-8726-49E8-9061-161DF28973E7}
 		{BEEBFC8E-91EC-4E24-8223-395C2302C1B3} = {77CC485D-D260-45FC-A161-3DDF3A571C41}
 		{9C1063E4-1A0B-4402-8D78-A3F8E23D3D98} = {0C8AE82D-CACF-44CD-BE4F-222041AC4699}
+		{BB650328-89A4-4733-926A-0CAF5741FCE9} = {BE8A5F95-23AD-4B5D-BA21-004909E80F00}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35

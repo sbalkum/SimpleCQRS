@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>StructureMap</id>
+    <version>4.4.2</version>
+    <title>StructureMap</title>
+    <authors>Jeremy D. Miller, Joshua Flanagan, Frank Quednau, Dmytro Dziuma</authors>
+    <owners>Jeremy D. Miller, Joshua Flanagan, Frank Quednau, Dmytro Dziuma</owners>
+    <licenseUrl>https://github.com/structuremap/structuremap/raw/master/LICENSE.TXT</licenseUrl>
+    <projectUrl>http://structuremap.github.io/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Original IoC Container for .Net</description>
+    <language>en-US</language>
+    <tags>IoC</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="System.Collections.Concurrent" version="[4.0.12, )" />
+        <dependency id="System.Reflection.TypeExtensions" version="[4.1.0, )" />
+        <dependency id="NETStandard.Library" version="[1.6.0, )" />
+      </group>
+      <group targetFramework=".NETStandard1.5">
+        <dependency id="System.Collections.Concurrent" version="[4.0.12, )" />
+        <dependency id="System.Reflection.TypeExtensions" version="[4.1.0, )" />
+        <dependency id="System.Runtime.Loader" version="[4.0.0, )" />
+        <dependency id="NETStandard.Library" version="[1.6.0, )" />
+      </group>
+    </dependencies>
+    <releaseNotes>Fixes https://github.com/structuremap/structuremap/issues/522</releaseNotes>
+  </metadata>
+</package>
