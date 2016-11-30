@@ -14,9 +14,8 @@ namespace SimpleCqrs.Sample
     {
         static void Main(string[] args)
         {
-            var container = new Container();
-
-            container.Configure(x => x.Scan(scanner =>
+            var registry = new Registry();
+            registry.Scan(scanner =>
             {
                 scanner.TheCallingAssembly();
                 scanner.AssembliesFromApplicationBaseDirectory();
@@ -26,7 +25,8 @@ namespace SimpleCqrs.Sample
                 scanner.RegisterConcreteTypesAgainstTheFirstInterface();
 
                 scanner.WithDefaultConventions();
-            }));
+            });
+            var container = new Container(registry);
 
             StructureMapServiceLocator.SetTheContainer(container);
 
